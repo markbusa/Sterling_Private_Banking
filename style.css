@@ -324,6 +324,10 @@ body{
 }
 
 
+.mobileburger{
+    display: none;
+}
+
 
 
 .pointer{
@@ -521,6 +525,20 @@ body{
         width: 90vw;
         left: 5vw;
     }
+
+
+    .mobileburger{
+        display: inline-block;
+        position: absolute;
+        top: 3vh;
+        right: 20px;
+        z-index: 999;
+    }
+
+    .burger{
+        display: none;
+    }
+
 
     .contactboxes{
         display: none !important;

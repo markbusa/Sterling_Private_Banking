@@ -95,15 +95,21 @@
 
                     <img class="mobilechair" src="redchair3.png">
 
+                    <div class="mobileburger">
+                            <div class="bbar bb1"></div>
+                            <div class="bbar bb2"></div>
+                            <div class="bbar bb3"></div>
+                    </div>
+
                 </div>
 
                 <!-- hero half line -->
 
                 <div class="col-sm-6 xterside">
                   <div class="burger">
-                     <div class="bbar"></div>
-                     <div class="bbar"></div>
-                     <div class="bbar"></div>
+                     <div class="bbar bb1"></div>
+                     <div class="bbar bb2"></div>
+                     <div class="bbar bb3"></div>
                   </div>
 
                   <img class="chair" src="redchair3.png">
@@ -211,6 +217,20 @@
                    }
                     
                })
+
+
+
+               $(".mobileburger").click(function(){
+
+                    if (tray == "closed") {
+                    $(".hoverwhite").animate({width: '100vw'}); 
+                    tray = "open";  
+                    }else{
+                    $(".hoverwhite").animate({width: '0vw'});
+                    tray = "closed";
+                    }
+                    
+                })
 
 
                
