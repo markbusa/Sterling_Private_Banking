@@ -32,23 +32,13 @@ body{
 
 
 .hero{
-    background-image: radial-gradient(#141414, #000000);
+    background-image: radial-gradient(#ffffff, #e6e6e6);
     background-attachment: fixed;
     height: 100vh !important;
    
 }
 
-.wealth{
-    font-family: 'TuesdayNight-Regular' !important;
-    font-weight:normal;
-    font-style:normal;
-    font-size: 9rem !important;
-    color: #202020;
-    position: absolute;
-    top: 60vh;
-    left: 15vw;
-    display: none;
-}
+
 
 
 .rule{
@@ -116,7 +106,7 @@ body{
     width: 30px;
     height: 3px;
     border-radius: 10px;
-    background-color: white;
+    background-color: rgb(88, 88, 88);
     margin-bottom: 5px;
 }
 
@@ -139,7 +129,7 @@ body{
 
 .textbox{
     margin-top: 10vh;
-    color: rgb(255, 255, 255);
+    color: rgb(122, 122, 122);
     /* display: none; */
     position: relative;
     z-index: 50;
@@ -150,7 +140,7 @@ body{
     font-weight:900;
     font-style:normal;
     font-size: 4rem !important;
-    color: #ffffff !important;
+    color: rgb(122, 122, 122) !important;
     position: relative;
     /* right: 100px; */
     display: none;
@@ -231,7 +221,7 @@ body{
 }
 
 .cb2{
-    background-color: #1f1e1e;
+    background-color: #b7041b;;
 }
 
 .cb a{
@@ -326,6 +316,11 @@ body{
 
 .container{
     position: relative !important;
+}
+
+
+.mobilechair{
+    display: none;
 }
 
 
@@ -431,8 +426,8 @@ body{
         padding-left: 20px;
         padding-right: 20px;
         text-align: center;
-        margin-top: 30vh;
-        color: #ffffff !important;
+        margin-top: 0vh;
+        color: rgb(122, 122, 122) !important;
         position: relative;
         z-index: 20;
     }
@@ -446,7 +441,7 @@ body{
     } */
 
     .logo{
-        display: none;
+        /* display: none; */
     }
 
 
@@ -456,7 +451,7 @@ body{
         /* font-style:normal; */
         font-size: 2rem !important;
         text-align: center;
-        color: #ffffff !important;
+        color: rgb(122, 122, 122) !important;
     }
 
     .textbox p{
@@ -497,32 +492,41 @@ body{
 
     
     .hero{
-            background-image: radial-gradient(#0e2950, #010923);
+            background-image: radial-gradient(#ffffff, #e6e6e6);
             background-attachment: fixed;
             height: auto !important;
-           
-        }
-       
-
-
-
-
-
-
-
-
-    .second h1{
-        text-align: center;
     }
-
-
-
-
 
 
     .pointer{
         display: none;
     }
+
+
+    .scrolldown{
+        position: relative;
+        width: 50vw;
+        text-align: left !important;
+        display: none;
+        overflow: hidden;
+        margin: 0 auto;
+     }
+
+
+
+     .mobilechair{
+        display: block;
+        position: absolute;
+        bottom: 0;
+        width: 90vw;
+        left: 5vw;
+    }
+
+    .contactboxes{
+        display: none !important;
+    }
+
+
 
 
 
