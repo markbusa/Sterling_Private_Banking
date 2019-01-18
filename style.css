@@ -1,10 +1,4 @@
 
-body{
-    width: 100vw;
-    overflow-x: hidden;
-}
-
-
 @font-face {
     font-family: "TuesdayNight-Regular";
     src: url("TuesdayNight-Regular.otf");
@@ -12,6 +6,15 @@ body{
     url("fonts/tuesdaynight-regular-webfont.woff") format("woff"),
     url("TuesdayNight-Regular.otf") format("opentype");
 }
+
+
+
+body{
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+
 
 
 @font-face {
@@ -33,6 +36,18 @@ body{
     background-attachment: fixed;
     height: 100vh !important;
    
+}
+
+.wealth{
+    font-family: 'TuesdayNight-Regular' !important;
+    font-weight:normal;
+    font-style:normal;
+    font-size: 9rem !important;
+    color: #202020;
+    position: absolute;
+    top: 60vh;
+    left: 15vw;
+    display: none;
 }
 
 
@@ -72,29 +87,19 @@ body{
 }
 
 
-/* .world{
-    position: absolute;
-    width: 55vw;
-    height: auto;
-    right: 0;
-    top: 0;
-    opacity: 0.4;
-
-    animation-name: worldanim;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-}
-
-@keyframes worldanim {
-    0% {opacity: 0.4;}
-    50% {opacity: 1;}
-    100% {opacity: 0.4;}
-} */
 
 
 .logo{
     height: 6vh;
     margin-top: 3vh;
+}
+
+.burger{
+
+    position: absolute;
+    top: 6vh;
+    right: 0;
+    z-index: 999;
 }
 
 
@@ -104,16 +109,7 @@ body{
     bottom: 0;
     left: 5vw;
     display: none;
-}
-
-
-.burger{
-
-    position: absolute;
-    top: 48vh;
-    left: 20px;
-    z-index: 999;
-
+    z-index: 50;
 }
 
 .bbar{
@@ -145,6 +141,8 @@ body{
     margin-top: 10vh;
     color: rgb(255, 255, 255);
     /* display: none; */
+    position: relative;
+    z-index: 50;
 }
 
 .textbox h1{
