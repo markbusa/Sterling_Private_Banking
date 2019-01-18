@@ -1,0 +1,520 @@
+
+body{
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+
+@font-face {
+    font-family: "TuesdayNight-Regular";
+    src: url("TuesdayNight-Regular.otf");
+    src: 
+    url("fonts/tuesdaynight-regular-webfont.woff") format("woff"),
+    url("TuesdayNight-Regular.otf") format("opentype");
+}
+
+
+@font-face {
+    font-family: "museo";
+    src: url("fonts/MuseoSans_0.otf");
+    src: 
+    /* url("fonts/MuseoSans.otf") format("woff"), */
+    url("fonts/MuseoSans_0.otf") format("opentype");
+}
+
+
+.heromobile{
+    display: none;
+}
+
+
+.hero{
+    background-image: radial-gradient(#141414, #000000);
+    background-attachment: fixed;
+    height: 100vh !important;
+   
+}
+
+
+.rule{
+    border-left: 1px solid rgba(255, 255, 255, 0.144);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    animation-name: ruleanim;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+}
+
+@keyframes ruleanim {
+    from {height: 0%;}
+    to {height: 100%;}
+  }
+
+
+.rule2{
+    border-left: 1px solid rgba(255, 255, 255, 0.144);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    
+    animation-name: ruleanim;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+}
+
+
+/* .world{
+    position: absolute;
+    width: 55vw;
+    height: auto;
+    right: 0;
+    top: 0;
+    opacity: 0.4;
+
+    animation-name: worldanim;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes worldanim {
+    0% {opacity: 0.4;}
+    50% {opacity: 1;}
+    100% {opacity: 0.4;}
+} */
+
+
+.logo{
+    height: 6vh;
+    margin-top: 3vh;
+}
+
+
+.chair{
+    height: 70vh;
+    position: absolute;
+    bottom: 0;
+    left: 5vw;
+    display: none;
+}
+
+
+.whitebar{
+    background-color: hsla(0, 0%, 0%, 0.164);
+    border-radius: 50px;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+.nav-link{
+    color: #ffffff !important;
+}
+
+
+.nav-link:hover{
+    font-weight: 500;
+}
+
+.textbox{
+    margin-top: 15vh;
+    color: rgb(255, 255, 255);
+    /* display: none; */
+}
+
+.textbox h1{
+    font-family: 'museo' !important;
+    font-weight:900;
+    font-style:normal;
+    font-size: 5rem !important;
+    color: #ffffff !important;
+    position: relative;
+    right: 100px;
+    display: none;
+}
+
+.textbox p{
+    display: none;
+}
+
+/* .textbox h2{
+    font-family: 'TuesdayNight-Regular' !important;
+    font-weight:normal;
+    font-style:normal;
+    font-size: 4.5rem !important;
+} */
+
+
+.textboxsec{
+    margin-top: 15vh;
+    color: rgb(43, 43, 43);
+}
+
+.ts{
+    border-left: 1px solid #b60b32;
+    padding-left: 25px;
+    color: white !important;
+}
+
+.textboxsec h2{
+    /* font-weight: 100 !important; */
+    /* font-family: 'Roboto', sans-serif !important; */
+    font-family: 'TuesdayNight-Regular' !important;
+    font-weight:normal;
+    font-style:normal;
+    font-size: 4rem;
+}
+
+
+.textboxsec h4{
+    font-weight: 900 !important;
+    font-family: 'Roboto', sans-serif !important;
+    color: #b60b32;
+}
+
+.hoverwhite{
+    position: absolute;
+    left: 0;
+    height: 100vh;
+    width: 13vw;
+    background: transparent;
+    z-index: 999;
+}
+
+.hoverwhite:hover{
+    background-color: white;
+}
+
+.contactboxes{
+    position: absolute;
+    right: 0px;
+    bottom: 10vh;
+    color: white;
+    list-style: none;
+    float: left;
+    display: none;
+}
+
+
+.contactboxes li{
+    display: inline-block;
+    padding: 5px;
+    margin: 0px;
+}
+
+.cb1{
+    background-color: #414141;
+}
+
+.cb2{
+    background-color: #1f1e1e;
+}
+
+.cb a{
+    color: white !important;
+}
+
+
+
+
+
+.scrolldown{
+   background: rgb(39, 39, 39);
+   border: none;
+   padding-left: 10px;
+   padding-right: 10px;
+   padding-top: 5px;
+   padding-bottom: 5px !important;
+   outline: none;
+   color: white;
+   position: relative;
+   outline: none !important;
+   width: 10vw;
+   text-align: left !important;
+   display: none;
+   overflow: hidden;
+}
+
+
+
+
+
+.scrolldown:hover{
+    background-color: white;
+    color: black;
+    text-align: center !important;
+}
+
+
+
+.btnarrow{
+    color: white;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: none;
+}
+
+
+
+.btnroll{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0%;
+    background-color: black;
+}
+
+
+
+
+.xterside{
+    height: 100vh;
+}
+
+
+.xter{
+    position: absolute;
+    bottom: 50px;
+    opacity: 0;
+
+}
+
+
+
+
+
+
+
+.footer{
+    background-color: #131313;
+    color: white;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px; 
+}
+
+
+.hidebig{
+    display: none !important;
+}
+
+.container{
+    position: relative !important;
+}
+
+
+
+
+.pointer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 15px;
+    width: auto;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+    box-sizing: border-box;
+    transition: 0.2s;
+    z-index: 60;
+}
+
+
+.pointer img{
+    height: 100%;
+}
+
+
+
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #000000; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #1f1f1f; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #0e0e0e; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 960px) {
+
+
+    .xter{
+        display: none;
+    }
+
+    .xterside{
+        display: none;
+    }
+
+    .textbox{
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+        margin-top: 30vh;
+        color: #ffffff !important;
+        position: relative;
+        z-index: 20;
+    }
+
+    /* .world{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        right: 0;
+        z-index: 1;
+    } */
+
+    .logo{
+        display: none;
+    }
+
+
+    .textbox h1{
+        /* font-family: 'TuesdayNight-Regular' !important; */
+        /* font-weight:normal; */
+        /* font-style:normal; */
+        font-size: 2rem !important;
+        text-align: center;
+        color: #ffffff !important;
+    }
+
+    .textbox p{
+        font-size: 0.8rem;
+    }
+
+
+    .final h1{
+    
+        font-size: 2.8rem;
+        margin-bottom: 25px;
+      
+    }
+
+    .navbar-nav{
+        display: none !important;
+    }
+
+
+    .interns{
+        /* width: 60vw; */
+        height: 80vh;
+        display: block;
+        margin: 0 auto;
+        position: relative;
+
+        animation-name: internsanime;
+        animation-duration: 2s;
+        animation-iteration-count: infinite; 
+    }
+
+   
+
+
+    .illuside{
+        padding-top: 0vh;
+    }
+
+    
+    .hero{
+            background-image: radial-gradient(#0e2950, #010923);
+            background-attachment: fixed;
+            height: auto !important;
+           
+        }
+       
+
+
+
+
+
+
+
+
+    .second h1{
+        text-align: center;
+    }
+
+
+
+
+
+
+    .pointer{
+        display: none;
+    }
+
+
+
+
+    
+
+    
+
+}
+
+
+
