@@ -107,6 +107,24 @@ body{
 }
 
 
+.burger{
+
+    position: absolute;
+    top: 48vh;
+    left: 20px;
+    z-index: 999;
+
+}
+
+.bbar{
+    width: 30px;
+    height: 3px;
+    border-radius: 10px;
+    background-color: white;
+    margin-bottom: 5px;
+}
+
+
 .whitebar{
     background-color: hsla(0, 0%, 0%, 0.164);
     border-radius: 50px;
@@ -124,7 +142,7 @@ body{
 }
 
 .textbox{
-    margin-top: 15vh;
+    margin-top: 10vh;
     color: rgb(255, 255, 255);
     /* display: none; */
 }
@@ -133,15 +151,16 @@ body{
     font-family: 'museo' !important;
     font-weight:900;
     font-style:normal;
-    font-size: 5rem !important;
+    font-size: 4rem !important;
     color: #ffffff !important;
     position: relative;
-    right: 100px;
+    /* right: 100px; */
     display: none;
 }
 
 .textbox p{
     display: none;
+    font-size: 2rem !important;
 }
 
 /* .textbox h2{
@@ -182,24 +201,24 @@ body{
 .hoverwhite{
     position: absolute;
     left: 0;
+    top: 0;
     height: 100vh;
-    width: 13vw;
-    background: transparent;
-    z-index: 999;
+    width: 0vw;
+    background-color: white;
+    z-index: 997;
+    display: block;
 }
 
-.hoverwhite:hover{
-    background-color: white;
-}
 
 .contactboxes{
     position: absolute;
-    right: 0px;
+    left: 0px;
     bottom: 10vh;
     color: white;
     list-style: none;
     float: left;
     display: none;
+    padding: 15px;
 }
 
 

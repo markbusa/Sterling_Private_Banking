@@ -47,55 +47,36 @@
 
     
     <div class="hero" id="hero">
-            <!-- <nav class="navbar navbar-expand-sm fixednav herobar">
-                <div class="container">
-                    
-                    <a class="navbar-brand" href="https://sterlingbankng.com/" target="_blank"><img src="logo.png" class="logo"></a>
-                    
-                    <ul class="navbar-nav">
-                      <li class="nav-item">
-                        <a class="nav-link" href="https://sterlingbankng.com/" target="_blank">Main Site</a>
-                      </li>
+           
 
-                  
-                      
-                    </ul>
-                   
-                </div>
-            </nav> -->
-
-
-        <div class="hoverwhite"></div>
-
+        <div class="burger">
+            <div class="bbar"></div>
+            <div class="bbar"></div>
+            <div class="bbar"></div>
+        </div>
 
 
         <div class="container">
             <div class="row">
                 
 
-                <div class="col-sm-2">
-                        <div class="rule2"></div>
-                        <img class="logo" src="logo.png">
+                <!-- <div class="col-sm-2"> -->
+                        <!-- <div class="rule2"></div> -->
+                        <!-- <img class="logo" src="logo.png">
+                        <div class="hoverwhite"></div> -->
 
-                        <ul class="contactboxes">
-                            <li class="cb cb1">
-                                <a href="#"><i class="fas fa-envelope"></i></a>
-                            </li>
-                            <li class="cb cb2">
-                                  <a href="#"> <i class="fas fa-phone"></i></a>
-                            </li>
-                        </ul>
-
-                </div>
+                <!-- </div> -->
 
 
                 <div class="col-sm-5" style="height: 100vh;">
                     
-                    <div class="rule"></div>
+                    <!-- <div class="rule"></div> -->
+                    <img class="logo" src="logo.png">
+                    <div class="hoverwhite"></div>
                     
                     <div class="textbox">
                         <br><br><br>
-                       <h1 class="headline">Banking,</h1><br>
+                       <h1 class="headline">Banking,</h1>
 
                        <p class="headsub">on your own terms.</p>
                         
@@ -107,6 +88,15 @@
                         </button>
 
                     </div>
+
+                    <ul class="contactboxes">
+                            <li class="cb cb1">
+                                <a href="#"><i class="fas fa-envelope"></i></a>
+                            </li>
+                            <li class="cb cb2">
+                                  <a href="#"> <i class="fas fa-phone"></i></a>
+                            </li>
+                    </ul>
 
                 </div>
 
@@ -193,7 +183,7 @@
 
             $(document).ready(function(){
                
-
+                var tray = "closed";
 
 
                $(".headline").slideDown();
@@ -207,13 +197,20 @@
 
 
 
-               $(".hoverwhite").click(function(){
-                $(this).animate({width: '50vw'});
+               $(".burger").click(function(){
+
+                   if (tray == "closed") {
+                    $(".hoverwhite").animate({width: '50vw'}); 
+                    tray = "open";  
+                   }else{
+                    $(".hoverwhite").animate({width: '0vw'});
+                    tray = "closed";
+                   }
+                    
+              
                })
 
-               $(".hoverwhite").mouseleave(function(){
-                 $(this).animate({width: '13vw'});
-               })
+              
 
 
                $(".scrolldown").mouseenter(function(){
