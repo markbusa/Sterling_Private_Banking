@@ -151,40 +151,7 @@ body{
     font-size: 2rem !important;
 }
 
-/* .textbox h2{
-    font-family: 'TuesdayNight-Regular' !important;
-    font-weight:normal;
-    font-style:normal;
-    font-size: 4.5rem !important;
-} */
 
-
-.textboxsec{
-    margin-top: 15vh;
-    color: rgb(43, 43, 43);
-}
-
-.ts{
-    border-left: 1px solid #b60b32;
-    padding-left: 25px;
-    color: white !important;
-}
-
-.textboxsec h2{
-    /* font-weight: 100 !important; */
-    /* font-family: 'Roboto', sans-serif !important; */
-    font-family: 'TuesdayNight-Regular' !important;
-    font-weight:normal;
-    font-style:normal;
-    font-size: 4rem;
-}
-
-
-.textboxsec h4{
-    font-weight: 900 !important;
-    font-family: 'Roboto', sans-serif !important;
-    color: #b60b32;
-}
 
 .hoverwhite{
     position: absolute;
@@ -277,9 +244,83 @@ body{
     top: 0;
     left: 0;
     height: 0%;
-    background-color: black;
+    background-color: #da2128;
 }
 
+
+.scrolldown2{
+    background: rgb(39, 39, 39);
+    border: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px !important;
+    outline: none;
+    color: white;
+    position: relative;
+    outline: none !important;
+    width: 10vw;
+    text-align: left !important;
+    /* display: none; */
+    overflow: hidden;
+ }
+ 
+ 
+ 
+ 
+ 
+ .scrolldown2:hover{
+     background-color: white;
+     color: black;
+     text-align: center !important;
+ }
+
+ .btnroll2{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0%;
+    background-color: #da2128;
+}
+
+
+.scrolldown3{
+    background: rgb(39, 39, 39);
+    border: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px !important;
+    outline: none;
+    color: white;
+    position: relative;
+    outline: none !important;
+    width: 10vw;
+    text-align: left !important;
+    /* display: none; */
+    overflow: hidden;
+ }
+ 
+ 
+ 
+ 
+ 
+ .scrolldown3:hover{
+     background-color: white;
+     color: black;
+     text-align: center !important;
+ }
+
+ .btnroll3{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0%;
+    background-color: #da2128;
+}
+ 
 
 
 
@@ -326,6 +367,78 @@ body{
 
 .mobileburger{
     display: none;
+}
+
+
+
+.second{
+    min-height: 100vh;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+    position: relative;
+}
+
+
+.second h1{
+    font-family: 'Nunito', sans-serif;
+}
+
+.redbold{
+    color: #b7041b;
+    font-weight: 600;
+}
+
+
+.pointcard{
+    position: relative;
+}
+
+.pointtext{
+    margin-left: 30px;
+    padding-left: 10px;
+    color: #b1b1b1;
+}
+
+.iconbox{
+    width: 30px !important;
+    height: 30px !important;
+    background-color: #da2128;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.iconbox i{
+    height: 25px;
+    margin-top: 7px;
+    margin-left: 7px;
+}
+
+
+.montage{
+    height: 80vh;
+}
+
+
+.car{
+    width: 25vw;
+    height: auto;
+    position: absolute;
+    right: 0;
+    bottom: -30vh;
+}
+
+
+.metro{
+    position: absolute;
+    bottom: 0px;
+    width: 50vw;
+    right: 0vw;
+    opacity: 0.6;
 }
 
 
@@ -436,17 +549,11 @@ body{
         z-index: 20;
     }
 
-    /* .world{
-        position: absolute;
-        top: 0;
-        width: 100%;
-        right: 0;
-        z-index: 1;
-    } */
+   .car{
+       display: none;
+   }
 
-    .logo{
-        /* display: none; */
-    }
+   
 
 
     .textbox h1{
@@ -475,21 +582,12 @@ body{
     }
 
 
-    .interns{
-        /* width: 60vw; */
-        height: 80vh;
-        display: block;
-        margin: 0 auto;
-        position: relative;
-
-        animation-name: internsanime;
-        animation-duration: 2s;
-        animation-iteration-count: infinite; 
+    .second{
+        padding-bottom: 0vh;
     }
 
+
    
-
-
     .illuside{
         padding-top: 0vh;
     }
@@ -508,6 +606,25 @@ body{
 
 
     .scrolldown{
+        position: relative;
+        width: 50vw;
+        text-align: left !important;
+        display: none;
+        overflow: hidden;
+        margin: 0 auto;
+     }
+
+     .scrolldown2{
+        position: relative;
+        width: 50vw;
+        text-align: left !important;
+        display: none;
+        overflow: hidden;
+        margin: 0 auto;
+     }
+
+
+     .scrolldown3{
         position: relative;
         width: 50vw;
         text-align: left !important;
@@ -542,6 +659,11 @@ body{
 
     .contactboxes{
         display: none !important;
+    }
+
+
+    .metro{
+        display: none;
     }
 
 

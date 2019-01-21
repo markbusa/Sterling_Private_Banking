@@ -15,6 +15,8 @@
 
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
 
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
@@ -135,7 +137,157 @@
     <!-- end of hero -->
 
 
+
+
+    <div class="second">
+        <div class="container">
+            <div class="row">
+                
+
+                <div class="col-sm-6">
+                    <img src="montage.png" class="montage">
+                </div>
+
+                <div class="col-sm-6">
+                    <h1>Wealth<br><span class="redboold">Management</span></h1>
+                    <br>
+                    <p>When it comes to protecting and managing your wealth, 
+                        we offer quality advice to ensure you meet your goals.</p>
+                    
+                    <hr>
+
+                    <div class="pointcard">
+                        <span class="iconbox">
+                                <i class="fas fa-shield-alt"></i>
+                        </span>
+                        <div class="pointtext">
+                            <h5>Trust & Fiduciary Services</h5>
+                            <p>Secure your future and that of your loved ones with.</p>
+                        </div>
+                    </div>
+
+
+                    <hr>
+
+                    <div class="pointcard">
+                        <span class="iconbox">
+                                <i class="fas fa-credit-card"></i>
+                        </span>
+                        <div class="pointtext">
+                            <h5>Credit & Financing</h5>
+                            <p>Take advantage of our flexible financing solutions created just for you and your businesses.</p>
+                        </div>
+                    </div>
+
+
+                    <hr>
+
+                    <div class="pointcard">
+                        <span class="iconbox">
+                                <i class="fas fa-plane"></i>
+                        </span>
+                        <div class="pointtext">
+                            <h5>Lifestyle Solutions</h5>
+                            <p>Enjoy exclusive luxury benefits because we understand your lifestyle.</p>
+                        </div>
+                    </div>
+<br><br>
+                    <button class="scrolldown3">
+                            <div class="btnroll3"></div>
+                            Learn More <i class="fas fa-arrow-right btnarrow"></i>
+                    </button>
+
+
+                </div>
+
+
+            </div>
+        </div>
+
+        <img class="car hidden-xs" src="car.jpg">
+
+    </div>
+
+
+
+    <!-- ..........................second third............... -->
+
   
+
+    <div class="second third">
+            <div class="container">
+                <div class="row">
+                    
+
+                        <div class="col-sm-6">
+                                <h1>Private<br><span class="redboold">Banking</span></h1>
+                                <br>
+                                <p>Enjoy the combined benefits of customized banking and exclusive 
+                                    lifestyle service made specially for you.
+                                </p>
+                                
+                                <hr>
+            
+                                <div class="pointcard">
+                                    <span class="iconbox">
+                                            <i class="fas fa-university"></i>
+                                    </span>
+                                    <div class="pointtext">
+                                        <h5>Flexible Accounts</h5>
+                                        <p>We’ve designed a broad range of accounts because we understand your diverse needs.</p>
+                                    </div>
+                                </div>
+            
+            
+                                <hr>
+            
+                                <div class="pointcard">
+                                    <span class="iconbox">
+                                            <i class="fas fa-user-tie"></i>
+                                    </span>
+                                    <div class="pointtext">
+                                        <h5>More than just your Banker</h5>
+                                        <p>Enjoy a truly holistic experience that takes into account both your financial and lifestyle needs.</p>
+                                    </div>
+                                </div>
+            
+            
+                                <hr>
+            
+                                <div class="pointcard">
+                                    <span class="iconbox">
+                                            <i class="fas fa-clock"></i>
+                                    </span>
+                                    <div class="pointtext">
+                                        <h5>Whenever, Wherever</h5>
+                                        <p>Whatever the time or location, there’s always someone available to meet your needs.</p>
+                                    </div>
+                                </div>
+
+
+                                <br><br>
+
+                                <button class="scrolldown2">
+                                    <div class="btnroll2"></div>
+                                    Learn More <i class="fas fa-arrow-right btnarrow"></i>
+                                </button>
+            
+            
+                            </div>
+
+                    
+
+                    <div class="col-sm-6" style="position:relative;">
+                        <!-- <img src="metrohalf.png" class="metro"> -->
+                    </div>
+
+    
+                </div>
+            </div>
+    
+            <img src="metrohalf.png" class="metro">
+    
+        </div>
 
 
   
@@ -150,7 +302,7 @@
     
 
     <div class="footer">
-        <p>2018 © Sterling Bank Plc. All Rights Reserved.</p>
+        <p>Copyright © 2019 Sterling Bank Plc. All Rights Reserved</p>
     </div>
 
 
@@ -200,6 +352,7 @@
                $(".scrolldown").delay(1000).slideDown(100,function(){
                 $(".btnarrow").fadeIn();
                });
+               
 
                $(".chair").delay(1200).fadeIn(3000);
                $(".contactboxes").delay(1500).slideDown();
@@ -243,6 +396,24 @@
 
                 $(".scrolldown").mouseleave(function(){
                  $(".btnroll").animate({left:'0'}).delay(100).animate({height:'0%'});
+               })
+
+
+               $(".scrolldown2").mouseenter(function(){
+                $(".btnroll2").animate({height: '100%'},200).delay(100).animate({left: '100%'});
+               })
+
+                $(".scrolldown2").mouseleave(function(){
+                 $(".btnroll2").animate({left:'0'}).delay(100).animate({height:'0%'});
+               })
+
+
+               $(".scrolldown3").mouseenter(function(){
+                $(".btnroll3").animate({height: '100%'},200).delay(100).animate({left: '100%'});
+               })
+
+                $(".scrolldown3").mouseleave(function(){
+                 $(".btnroll3").animate({left:'0'}).delay(100).animate({height:'0%'});
                })
 
 
