@@ -381,6 +381,8 @@ body{
 
 .second h1{
     font-family: 'Nunito', sans-serif;
+    padding-left: 20px;
+    border-left: 1px solid #b7041b;
 }
 
 .redbold{
@@ -429,7 +431,7 @@ body{
     height: auto;
     position: absolute;
     right: 0;
-    bottom: -30vh;
+    bottom: -10vh;
 }
 
 
@@ -439,6 +441,14 @@ body{
     width: 50vw;
     right: 0vw;
     opacity: 0.6;
+}
+
+
+.elder{
+    position: absolute;
+    bottom: 0px;
+    height: 90vh;
+    right: 0vw;
 }
 
 
@@ -663,6 +673,11 @@ body{
 
 
     .metro{
+        display: none;
+    }
+
+
+    .elder{
         display: none;
     }
 
