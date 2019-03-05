@@ -8,7 +8,8 @@
 
     <link rel="shortcut icon" type="image/png" href="favicon.png"/>
 
-    <link href="style.css" rel="stylesheet">
+    <!-- <link href="style.css" rel="stylesheet"> -->
+    <link href="styleplus.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:300" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
@@ -49,27 +50,65 @@
 
     
     <div class="hero" id="hero">
+
+        <div class="container navcont">
+
+                <nav class="navbar navbar-expand-lg navbar-light">
+                        <a class="navbar-brand" href="#"><img class="logo" src="logo.png" style="margin: 0px !important;"></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                          <ul class="navbar-nav">
+                            <li class="nav-item active">
+                              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="whatwedo.html">What we do</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Who we are
+                              </a>
+                              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="trust-fiduciary.html">Trust & Fiduciary Services</a>
+                                <a class="dropdown-item" href="credit-financing.html">Credit & Financing</a>
+                                <a class="dropdown-item" href="philanthrophy.html">Philanthrophy</a>
+                                <a class="dropdown-item" href="lifestyle-solutions.html">Lifestyle Solutions</a>
+                                <a class="dropdown-item" href="investment-advisory.html">Investment Advisory Services</a>
+                                
+                                <a class="dropdown-item" href="#">Flexible Account</a>
+                                <a class="dropdown-item" href="#">Local Knowledge & International Expertise</a>
+                                <a class="dropdown-item" href="#">More than just your banker</a>
+                                <a class="dropdown-item" href="#">Whenever, Wherever</a>
+                              </div>
+                            </li>
+                            <li class="nav-item">
+                                    <a class="nav-link" href="#">Become a client</a>
+                            </li>
+                            <li class="nav-item">
+                                    <a class="nav-link" href="#">Internet Banking</a>
+                            </li>
+                            <li class="nav-item">
+                                    <a class="nav-link" href="#">Investments</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </nav>
+
+        </div>
+        
+
            
-
-
 
         <div class="container">
             <div class="row">
-                
-
-                <!-- <div class="col-sm-2"> -->
-                        <!-- <div class="rule2"></div> -->
-                        <!-- <img class="logo" src="logo.png">
-                        <div class="hoverwhite"></div> -->
-
-                <!-- </div> -->
-
-
                 <div class="col-sm-6" style="height: 100vh;">
                     
-                    <!-- <div class="rule"></div> -->
-                    <img class="logo" src="logodark.png">
-                    <div class="hoverwhite"></div>
+                    
+                    <!-- <img class="logo" src="logodark.png"> -->
+
+                    
                     
                     <div class="textbox">
                         <br><br><br>
@@ -95,26 +134,13 @@
                             </li>
                     </ul>
 
-                    <img class="mobilechair" src="redchair3.png">
-
-                    <div class="mobileburger">
-                            <div class="bbar bb1"></div>
-                            <div class="bbar bb2"></div>
-                            <div class="bbar bb3"></div>
-                    </div>
 
                 </div>
 
                 <!-- hero half line -->
 
                 <div class="col-sm-6 xterside">
-                  <div class="burger">
-                     <div class="bbar bb1"></div>
-                     <div class="bbar bb2"></div>
-                     <div class="bbar bb3"></div>
-                  </div>
-
-                  <img class="chair" src="redchair3.png">
+                 
                 </div>
 
             </div>
@@ -139,16 +165,16 @@
 
 
 
-    <div class="second">
+    <div class="second spj">
         <div class="container">
             <div class="row">
                 
 
                 <div class="col-sm-6">
-                    <img src="montage.png" class="montage">
+                    <!-- <img src="montage.png" class="montage"> -->
                 </div>
 
-                <div class="col-sm-6">
+                <div class="col-sm-6 stx">
                     <h1>Wealth<br><span class="redboold">Management</span></h1>
                     <br>
                     <p>When it comes to protecting and managing your wealth, 
@@ -219,7 +245,7 @@
                 <div class="row">
                     
 
-                        <div class="col-sm-6">
+                        <div class="col-sm-6 stx">
                                 <h1>Private<br><span class="redboold">Banking</span></h1>
                                 <br>
                                 <p>Enjoy the combined benefits of customized banking and exclusive 
@@ -277,8 +303,8 @@
 
                     
 
-                    <div class="col-sm-6" style="position:relative;">
-                        <!-- <img src="metrohalf.png" class="metro"> -->
+                    <div class="col-sm-6" style="position:relative;padding-top: 20vh;">
+                            <img src="banker.jpg" class="montage">
                     </div>
 
     
@@ -286,7 +312,7 @@
             </div>
     
             <!-- <img src="metrohalf.png" class="metro"> -->
-            <img src="elderlymangreyflip.png" class="elder">
+            <!-- <img src="dapper.png" class="elder"> -->
     
         </div>
 
@@ -324,29 +350,8 @@
 
 
 
-             $(".seek").click(function(e){
-                        // Prevent a page reload when a link is pressed
-                        e.preventDefault();
-                        // Call the scroll function
-                        goToByScroll("second");
-               })
-
-
-               $(".down").click(function(e){
-                        // Prevent a page reload when a link is pressed
-                        e.preventDefault();
-                        // Call the scroll function
-                        goToByScroll("hero");
-               })
-
-
-
-
-
             $(document).ready(function(){
                
-                var tray = "closed";
-
 
                $(".headline").slideDown();
                $(".headsub").delay(500).fadeIn(2000);
@@ -355,38 +360,11 @@
                });
                
 
-               $(".chair").delay(1200).fadeIn(3000);
                $(".contactboxes").delay(1500).slideDown();
 
 
 
-               $(".burger").click(function(){
-
-                   if (tray == "closed") {
-                    $(".hoverwhite").animate({width: '50vw'}); 
-                    tray = "open";  
-                   }else{
-                    $(".hoverwhite").animate({width: '0vw'});
-                    tray = "closed";
-                   }
-                    
-               })
-
-
-
-               $(".mobileburger").click(function(){
-
-                    if (tray == "closed") {
-                    $(".hoverwhite").animate({width: '100vw'}); 
-                    tray = "open";  
-                    }else{
-                    $(".hoverwhite").animate({width: '0vw'});
-                    tray = "closed";
-                    }
-                    
-                })
-
-
+              
                
               
 
@@ -416,6 +394,8 @@
                 $(".scrolldown3").mouseleave(function(){
                  $(".btnroll3").animate({left:'0'}).delay(100).animate({height:'0%'});
                })
+
+
 
 
 

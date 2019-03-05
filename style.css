@@ -157,12 +157,52 @@ body{
     position: absolute;
     left: 0;
     top: 0;
-    height: 100vh;
-    width: 0vw;
-    background-color: white;
+    min-height: 100vh;
+    width: 100vw;
+    /* background-color: #000000; */
+    
+    background: url(buildings.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
     z-index: 997;
-    display: block;
+    display: none;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
 }
+
+
+.menulist{
+    position: relative;
+    list-style: none;
+}
+
+.menulist li{
+    margin-bottom: 20px;
+}
+
+.menulist li a{
+    color: #ffffff !important;
+}
+
+.menulist li a:hover{
+    color: #b7041b !important;
+}
+
+.sublists{
+    position: relative;
+    left: 50px;
+}
+
+.sublists ul{
+    display: none;
+    list-style: none !important;
+}
+
 
 
 .contactboxes{
@@ -435,6 +475,54 @@ body{
 }
 
 
+.postnav{
+    background: #000000;
+    border-bottom: 3px solid #b7041b;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.postnav a{
+    color: white;
+}
+
+.postnav a:hover{
+    color: #da2128;
+}
+
+
+.checkered{
+    width: 30vw;
+}
+
+
+.signup{
+    background-color: #414141;
+    color: white;
+    padding-bottom: 5vh;
+    padding-top: 5vh;
+}
+
+
+.bcd1{
+    text-align:right;
+}
+
+.bcd2{
+    text-align:left;
+}
+
+
+
+
+
+
+
+
+
+
+
 .metro{
     position: absolute;
     bottom: 0px;
@@ -450,6 +538,13 @@ body{
     height: 90vh;
     right: 0vw;
 }
+
+
+.pagenav a{
+    color: #414141 !important;
+}
+
+
 
 
 
@@ -587,9 +682,7 @@ body{
       
     }
 
-    .navbar-nav{
-        display: none !important;
-    }
+
 
 
     .second{
@@ -666,6 +759,11 @@ body{
         display: none;
     }
 
+    .pageburger{
+        display: inline-block !important;
+        position: relative !important;
+    }
+
 
     .contactboxes{
         display: none !important;
@@ -682,6 +780,19 @@ body{
     }
 
 
+    .bcd1{
+        text-align:center;
+        margin-bottom: 5px;
+    }
+    
+    .bcd2{
+        text-align:center;
+    }
+
+    .checkered{
+        width: 80vw;
+        margin-bottom: 10px;
+    }
 
 
 
